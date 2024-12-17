@@ -1,0 +1,24 @@
+.b-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.b-grid .card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 3px solid #48ffc2;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.b-grid img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.b-grid .card.active img, .b-grid .card.resolved img {
+    opacity: 1;
+}
